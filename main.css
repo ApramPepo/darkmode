@@ -140,7 +140,8 @@ header {
     padding: 1rem;
     font-weight: bolder;
     font-size: 1.35rem;
-    background: rgb(80, 211, 41);
+    background: var(--head-base-bg);
+    color: var(--head-base-text);
 }
 
 main {
@@ -157,7 +158,8 @@ footer {
     padding: 1rem;
     font-weight: bolder;
     font-size: 1.35rem;
-    background: rgb(80, 211, 41);
+    background: var(--head-base-bg);
+    color: var(--head-base-text);
 }
 
 p {
@@ -165,4 +167,33 @@ p {
     border: dashed;
     padding: 1rem;
     text-align: center;
+}
+
+:root.light {
+    --color-base-bg: rgb(255, 255, 255);
+    --color-base-text: rgb(0, 0, 0);
+}
+
+:root.dark {
+    --color-base-bg: rgb(26, 21, 21);
+    --color-base-text: rgb(255, 255, 255);
+}
+
+header.dark,
+footer.dark {
+    --head-base-bg: rgb(36, 49, 32);
+    --head-base-text: rgb(255, 255, 255);
+}
+
+header.light,
+footer.light {
+    --head-base-bg: rgb(80, 211, 41);
+    --head-base-text: rgb(0, 0, 0);
+}
+
+.toggle {
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
 }
