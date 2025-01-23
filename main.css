@@ -197,3 +197,9 @@ footer.light {
     position: absolute;
     top: 100%;
 }
+
+body,
+header,
+footer {
+    transition: background-color 0.2s ease-in, color 0.3s ease-in;
+}
