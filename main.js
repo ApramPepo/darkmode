@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const root = document.documentElement;
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
-    const themeToggle = document.getElementById('toggle');
+    const themeToggle = document.querySelector('.toggle');
 
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme') || 'light';
